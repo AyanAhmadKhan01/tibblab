@@ -29,29 +29,34 @@ export default function HowItWorks() {
   }, []);
 
   const steps = [
+    
     {
       step: 1,
       title: "Strategy & Requirements",
       desc: "Understand your goals, audience, budget & KPIs",
       icon: ClipboardList,
+      img: '/Innovation-amico.png'
     },
     {
       step: 2,
       title: "Creator Matching",
       desc: "Shortlist & finalize best-fit fitness creators",
       icon: Users,
+      img: '/Social media-bro.png'
     },
     {
       step: 3,
       title: "Campaign Execution",
       desc: "Content creation, publishing & tracking",
       icon: Rocket,
+       img: '/Team work-bro.png'
     },
     {
       step: 4,
       title: "Analyze, Optimize & Scale",
       desc: "Improve performance and scale winning campaigns",
       icon: TrendingUp,
+       img: '/Online world-bro.png'
     },
    
   ];
@@ -60,47 +65,37 @@ export default function HowItWorks() {
     <>
       <div className="max-w-[1500px] w-full m-auto mt-50">
         <div>
-          <div className="mr-20">
+          <div className="ml-20">
 
-            <h1 className="text-right text-4xl  text-[hsl(202,100%,55%)] ">
+            <h1 className="text-left text-4xl  text-[hsl(202,100%,55%)] ">
             How it Works?
           </h1>
-            <p className="text-right text-xl opacity-80">A refined workflow engineered for performance</p> 
+            <p className="text-left text-xl opacity-80">A refined workflow engineered for performance</p> 
             </div>
-          <div>
+   <div>
             {steps.map((s, i) => (
-              <div style={{top: '80px'}} key={i} className={`bg-[hsl(210,40%,2%)] z-10 sticky top-0 rounded-3xl p-15 md:mx-0 mx-3`}>
-                      <div className="w-[5px] left-0 top-9 h-[100px] absolute bg-[hsl(202,100%,41%)] shadow-[0_0_1000px_30px_hsl(202,100%,41%)] border-[100px] border-black blur-[200px] -z-50"></div>
-      <div className="w-[5px] ml-3 h-[100px] left-0  absolute bg-[hsl(202,100%,41%)]">
-        </div>
-        <div className="w-[5px] right-0 top-90 mt-auto h-[100px] absolute bg-[hsl(202,100%,41%)] shadow-[0_0_1000px_70px_hsl(202,100%,41%)] border-[100px] border-black blur-[200px]">
-        </div>
-        <div className="w-[5px] right-4 top-96 h-[100px] absolute bg-[hsl(202,100%,41%)]">
-        </div>
-   
-     
-                   <h1 className="text-xl text-text w-fit p-4 rounded-br-4xl border-2 bg-[rgba(255,255,255,.03)] border-[rgba(255,255,255,.05)]"> <span className="text-[rgba(255,255,255,.9)]">Step</span> {s.step}</h1>                 
-                <div className="py-10  rounded-2xl">
-                  <div className={`flex md:flex-row flex-col justify-betweenround-2xl mim-h-[20vh] ${i === 0 ? 'mb-[300px]' : i === 1 ? ' mb-[300px]' : i === 2 ? ' mb-[300px]' : i === 3 ? 'mb-[300px]' : '' }`}>
-                    <div className="flex flex-col justify-center w-full mr-5 rounded-2xl ">
-                  <s.icon height={64} width={64} className="ml-10"/>   
-                    <div className="ml-10 text-accent">
-                     
-                       </div>
-               <div className="p-10 w-fit">
-                    <h2 className="text-4xl text-text  transition-all duration-500">{s.title}</h2>
-<p className="text-[hsl(202,100%,30%)] mt-2">{s.desc}</p>
+              <div style={{top: '15px'}} key={i} className={`flex justify-center items-center h-fit xl:w-[52%] w-full m-auto
+ bg-[hsl(210,40%,2%)] z-10 sticky rounded-3xl p-10 md:mx-0 ${i === 2 ? '2xl:float-right z-40' : i === 0 ? ' z-0' : i === 1 ? 'float-right z-40' : i === 3 ? ' z-50' : ''}`}>
+            
+     <div>
+                   <h1 className="text-xl text-text w-fit p-4  bg-[rgba(255,255,255,.03)]"> <span className="text-[rgba(255,255,255,.9)]">#</span> {s.step}</h1>                 
+               
+                  <div className={` flex  items-center gap-5 ml-2`}>
+                 
+                  <s.icon height={64} width={64}/>   
+                   
+               <div className="py-10 ">
+                    <h2 className="text-[clamp(1.6rem,4vw,2.25rem)] leading-[2.5rem] text-text  transition-all duration-500">{s.title}</h2>
+<p className="text-[hsl(202,100%,30%)] md:mt-2 nt-0">{s.desc}</p>
 </div>
                     </div>
-                    <div >
-                      <img className="h-[100%] rounded-2xl object-cover" src="https://dreamwallv2.vercel.app/img/Wallpapers/Wallpaper%201.jpg" alt="" />
+                    <div className="flex justify-center">
+                      <img className="md:h-[65vh] h-[40vh] bg-[rgba(255,255,255,.02)] p-3 rounded-2xl object-cover" src={s.img} alt={s.title} />
                       </div>
+                     </div> 
                      </div>
-                 
               
-                 
-                </div>
-              </div>
+           
             ))}
           </div>
         </div>

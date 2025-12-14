@@ -56,7 +56,7 @@ const services = [
 export default function Service() {
   return (
     <div className="max-w-[1500px] w-full m-auto my-10 relative">
-      <div className="w-[5px] top-9 h-[100px] absolute bg-[hsl(202,100%,41%)] shadow-[0_0_100px_30px_hsl(202,100%,41%)] border-[100px] border-black blur-[200px] -z-50"></div>
+      <div className="w-[5px] top-9 h-[100px] absolute bg-[hsl(202,100%,41%)] shadow-[0_0_100px_40px_hsl(202,100%,41%)] border-[100px] border-black blur-[200px] -z-50"></div>
       <div className="w-[5px] ml-3 h-[100px] absolute bg-[hsl(202,100%,41%)]">
         </div>
         <div className="w-[5px] right-0 top-90 mt-auto h-[100px] absolute bg-[hsl(202,100%,41%)]">

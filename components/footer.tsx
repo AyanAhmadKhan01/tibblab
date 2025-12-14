@@ -1,4 +1,5 @@
 import { FlaskConical } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -55,6 +56,7 @@ export default function Footer() {
           <p className="text-text opacity-50 text-sm">
             © 2025 Tibb Labs. All rights reserved.
           </p>
+          <Link href="https://storyset.com/online" className="text-text opacity-30 text-sm">Online illustrations by Storyset</Link>
           <div className="flex gap-6 text-sm text-[hsl(202,40%,30%)]">
             <span className="hover:text-[hsl(202,100%,50%)] cursor-pointer transition-colors">
               Privacy Policy
