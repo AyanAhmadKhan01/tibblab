@@ -2,11 +2,12 @@
 
 import { FlaskConical } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const trigger = 1759
+    const trigger = 3359
      const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -56,9 +57,9 @@ export default function Navbar() {
                     [&>li]:hover:text-accent [&>li]:transition-all
                 
                 `}>
-                    <li onClick={() => setIsMenuOpen(false)}>Home</li>
-                    <li onClick={() => setIsMenuOpen(false)}>About Us</li>
-                    <li onClick={() => setIsMenuOpen(false)}>Services</li>
+                    <Link href={'/'}><li onClick={() => setIsMenuOpen(false)}>Home</li></Link>
+                  <Link href={'/about'}><li onClick={() => setIsMenuOpen(false)}>About Us</li></Link>
+                   <Link href={'/service'}>  <li onClick={() => setIsMenuOpen(false)}>Services</li></Link>
                     <li onClick={() => setIsMenuOpen(false)}>Blog</li>
                     <li onClick={() => setIsMenuOpen(false)}>Contact</li>
                 </ul>
