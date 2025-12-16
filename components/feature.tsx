@@ -29,14 +29,10 @@ export default function Feature() {
         <> 
         <div className="relative z-30 mt-50 mx-3">
         <div className="max-w-[1500px] w-full m-auto relative">
-            <div className="hidden md:block w-[5px] -left-20 top-9 h-[100px] absolute bg-[hsl(202,100%,41%)] shadow-[0_0_100px_10px_hsl(202,100%,41%)] border-[100px] border-black blur-[200px] -z-50"></div>
-      <div className="hidden md:block w-[5px] ml-3 h-[100px] -left-20 absolute bg-[hsl(202,100%,41%)]">
-        </div>
-        <div className="hidden md:block w-[5px] -right-20 top-90 mt-auto h-[100px] absolute bg-[hsl(202,100%,41%)]">
-        </div>
-        <div className="hidden md:block w-[5px] -right-24 top-96 h-[100px] absolute bg-[hsl(202,100%,41%)] shadow-[0_0_100px_20px_hsl(202,100%,41%)] border-[100px] border-black blur-[200px] -z-50">
-        </div>
-          
+           <h1 className="text-xl mb-10 text-[rgba(255,255,255,.5)] uppercase">
+            [  Features We Have  ]
+          </h1>
+
                 <h1 className=" text-5xl font-medium text-[hsl(202,100%,55%)]">Why Tibb Lab</h1>
                  <p className="font-medium text-text  w-fit ml-2"> Experience, precision, and results all under one roof.</p>
                  

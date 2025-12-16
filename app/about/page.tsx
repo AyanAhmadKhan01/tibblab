@@ -76,12 +76,19 @@ const items = [
 
     return(
         <>
+          <div className="mt-20 text-center pb-30 border-b-2 border-[rgba(255,255,255,.05)]">
+    <h1 className="text-6xl">Our Philosophy</h1>
+    <p className="text-xl mt-5 opacity-60"> <span className="border-r-2 border-[rgba(255,255,255,.2)] px-5">[ Minimalist ]</span> <span className="border-r-2 border-[rgba(255,255,255,.4)]  px-5">[ Precise ]</span> <span className="px-5">[ Performance-first ]</span></p>
+   </div>
         <div className="mt-20 max-w-[1500px] w-[100%] m-auto">
             <div className="ml-5">
                <div>           
-                <h1 className="text-2xl md:text-5xl font-medium tracking-tighter"><span className="md:pr-5">About</span> Tibb <span className='tracking-wide text-accent'>Labs</span></h1>
+                    <h1 className="text-xl mb-10 text-[rgba(255,255,255,.5)] uppercase">
+            [  About Us ]
+          </h1>
+                <h1 className="text-2xl md:text-6xl font-medium tracking-tighter"><span className=""></span> Tibb <span className='tracking-wide text-accent'>Labs</span></h1>
                 </div>
-<p className="font-medium text-text mt-2 md:w-[40%]">Tibblab is a modern influencer marketing agency built for brands that value
+<p className="font-medium text-text mt-4 md:w-[40%]">Tibblab is a modern influencer marketing agency built for brands that value
     real results over vanity metrics.</p>
             </div>
            <div className="mt-0 mb-40 border-b-1 border-[rgba(255,255,255,.2)]">
@@ -115,53 +122,37 @@ const items = [
       ))}
     </div>
     </div>
-
-            <h1 className="text-2xl text-center md:text-5xl font-medium tracking-tighter mb-5 mt-3">What We Do?</h1>
-            <div className="flex lg:justify-start justify-center flex-wrap mt-10">
-            {services.map((s) => {
+  <h1 className="text-xl text-center mb-6 text-[rgba(255,255,255,.5)] uppercase">
+            [  Our Services ]
+          </h1>
+            <h1 className="text-2xl text-center md:text-5xl font-medium tracking-tighter 
+            mb-10">What We Do?</h1>
+           <div className="flex justify-center flex-wrap gap-6">
+      {services.map((s) => {
         return (
-            
-
-            <div className="relative group"    key={s.id}>
-
-  <span className="absolute -top-1 -left-1 w-2 h-2 border-2 bg-white
-                   opacity-0 group-hover:opacity-100
-                   transition-opacity" />
-
-  <span className="absolute -top-1 -right-1 w-2 h-2 border-2 bg-white
-                   opacity-0 group-hover:opacity-100
-                   transition-opacity" />
-
-  <span className="absolute -bottom-1 -left-1 w-2 h-2 border-2 bg-white
-                   opacity-0 group-hover:opacity-100
-                   transition-opacity" />
-
-  <span className="absolute -bottom-1 -right-1 w-2 h-2 border-2 bg-white
-                   opacity-0 group-hover:opacity-100
-                   transition-opacity" />
-
           <div
-           
-            className={`hover:border-[rgba(255,255,255,.2)] 
- cursor-pointer p-10  border-[rgba(255,255,255,.0)] border-1 border-l-[rgba(255,255,255,.2)] py-20 md:w-[500px] h-[300px] w-[300px] relative group overflow-hidden `}
+            key={s.id}
+            className={`p-10 bg-[rgba(255,255,255,.04)] md:w-[400px] w-[300px] ${s.id === 1 ? 'border-4 border-b-4 border-[rgba(255,255,255,.05)] rounded-tl-2xl': s.id === 3 ? 'rounded-tr-2xl border-4 border-b-4 border-[rgba(255,255,255,.05)]' : s.id === 4 ? 'border-l-4 border-b-4 border-[rgba(255,255,255,.05)] rounded-bl-2xl' : s.id === 5 ? 'rounded-br-2xl border-r-4 border-b-4 border-[rgba(255,255,255,.05)]' : ''}`}
           >
-            <div className="border-12 w-full absolute top-0 left-60 border-[rgba(255,255,255,.7)] blur-[100px] opacity-0 group-hover:opacity-100 "></div>
             <s.icon size={40} className="mb-4 text-accent" />
 
             <h3 className="text-2xl font-medium mb-2 text-text">{s.title}</h3>
 
-            <p className="opacity-45 mb-4 text-white">{s.description}</p>
+            <p className="opacity-80 mb-4 text-primary">{s.description}</p>
 
-          </div>
+            {/* <Link
+              href={s.link}
+              className="text-sm underline underline-offset-4 text-accent"
+            >
+              Learn more
+            </Link> */}
           </div>
         );
       })}
-      </div>
+    </div>
+
      
-   <div className="mt-20 text-center">
-    <h1 className="text-6xl">Our Philosophy</h1>
-    <p className="text-xl mt-5"> <span className="border-r-2 border-[rgba(255,255,255,.2)] px-5">Minimalist</span> <span className="border-r-2 border-[rgba(255,255,255,.4)]  px-5">Precise</span> <span className="px-5">Performance-first</span></p>
-   </div>
+ 
         </div>
         </>
     )

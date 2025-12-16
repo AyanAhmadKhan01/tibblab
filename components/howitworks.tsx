@@ -63,24 +63,27 @@ export default function HowItWorks() {
 
   return (
     <>
-      <div className="max-w-[1500px] w-full m-auto mt-50">
+      <div className="max-w-[1500px] w-full m-auto mt-40">
         <div>
-          <div className="ml-20">
+          <div className="text-center ">
+             <h1 className="text-xl mb-10 text-[rgba(255,255,255,.5)] uppercase">
+            [  Our Process  ]
+          </h1>
 
-            <h1 className="text-left text-4xl  text-[hsl(202,100%,55%)] ">
+            <h1 className="text-4xl  text-[hsl(202,100%,55%)] ">
             How it Works?
           </h1>
-            <p className="text-left text-xl opacity-80">A refined workflow engineered for performance</p> 
+            <p className="text-xl opacity-80">A refined workflow engineered for performance</p> 
             </div>
    <div>
             {steps.map((s, i) => (
-              <div style={{top: '15px'}} key={i} className={`flex justify-center items-center h-fit xl:w-[52%] w-full m-auto
+              <div style={{top: '0px'}} key={i} className={`flex justify-center items-center xl:w-[52%] w-full m-auto
  bg-[hsl(210,40%,2%)] z-10 sticky rounded-3xl p-10 md:mx-0 ${i === 2 ? '2xl:float-right z-40' : i === 0 ? ' z-0' : i === 1 ? 'float-right z-40' : i === 3 ? ' z-50' : ''}`}>
             
      <div>
                    <h1 className="text-xl text-text w-fit p-4  bg-[rgba(255,255,255,.03)]"> <span className="text-[rgba(255,255,255,.9)]">#</span> {s.step}</h1>                 
                
-                  <div className={` flex  items-center gap-5 ml-2`}>
+                  <div className={`flex items-center gap-5 ml-2`}>
                  
                   <s.icon height={64} width={64}/>   
                    
