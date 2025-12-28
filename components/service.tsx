@@ -5,15 +5,6 @@ import {
   Rocket,
   PlayCircle,
 } from "lucide-react";
-import Link from "next/link";
-
-const iconMap = {
-  Handshake,
-  Users,
-  Package,
-  Rocket,
-  PlayCircle,
-};
 
 const services = [
   {
@@ -57,9 +48,9 @@ export default function Service() {
   return (
    <>
     <div className="mt-20 max-w-[1500px] w-[100%] m-auto">
-   <div className=" mb-12 2xl:mx-0 mx-20">
+   <div className=" mb-12 2xl:mx-0 mx-5">
      <h1 className="text-xl mb-10 text-[rgba(255,255,255,.5)] uppercase">
-            [  Services We Offer ]
+            [  Our offerings ]
           </h1>
 
   <h1 className="text-4xl">Services That We Offer</h1>
@@ -92,7 +83,7 @@ export default function Service() {
           <div
            
             className={`hover:border-[rgba(255,255,255,.2)] 
- cursor-pointer p-10  border-[rgba(255,255,255,.0)] border-1 xl:border-l-[rgba(255,255,255,.2)] border-l-[rgba(255,255,255,0)] xl:border-b-[rgba(255,255,255,0)] border-b-[rgba(255,255,255,.2)] py-20 md:w-[500px] h-[300px] xl:w-[500px] w-[300px] relative group overflow-hidden `}
+ cursor-pointer p-10 border-[rgba(255,255,255,.0)] border-1 xl:border-l-[rgba(255,255,255,.2)] border-l-[rgba(255,255,255,0)] xl:border-b-[rgba(255,255,255,0)] border-b-[rgba(255,255,255,.2)] py-20 md:w-[500px] h-[300px] xl:w-[500px] relative group overflow-hidden `}
 
           >
             <div className="border-12 w-full absolute top-0 left-60 border-[rgba(255,255,255,.7)] blur-[100px] opacity-0 group-hover:opacity-100 "></div>

@@ -9,7 +9,7 @@ export default function QNA() {
   return (
    <>
    <div className="max-w-[1500px] m-auto">
-    <div className="my-20 lg:mx-6 mx-10">
+    <div className="my-20 lg:mx-6 mx-2">
     <div className="text-center mb-15 ">
        <h1 className="text-xl mb-10 text-[rgba(255,255,255,.5)] uppercase">
             [ Common Question  ]

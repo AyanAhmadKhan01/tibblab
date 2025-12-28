@@ -156,7 +156,7 @@ export default function Feature() {
 
 
 
-    <div className="flex justify-center items-center lg:col-span-1 col-span-2  flex-col bg-[rgba(255,255,255,.04)] rounded-4xl shadow-[0px_0px_200px_10px_#000]">
+    <div className="flex justify-center items-center  overflow-hidden xl:col-span-1 col-span-3 flex-col bg-[rgba(255,255,255,.02)] rounded-4xl shadow-[0px_0px_200px_10px_#000]">
      <div className="flex flex-col gap-2  shadow-[inset_0px_0px_2000px_0px_#000] rounded-4xl m-5">
        <ClipboardList className=" -translate-x-10 -rotate-3" height={90} width={90} />
         <h1 className="flex justify-center gap-3 bg-[rgba(255,255,255,.05)] py-8 px-6 rounded-2xl cursor-pointer border-4 border-[rgba(255,255,255,.0)] border-t-[rgba(255,255,255,.1)] border-r-[rgba(255,255,255,.04)] backdrop-blur-[200px] saturate-200 -rotate-3 -translate-x-25 shadow-[10px_15px_2px_#000]">
