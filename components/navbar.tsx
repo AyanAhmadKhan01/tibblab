@@ -60,7 +60,7 @@ export default function Navbar() {
                     <Link href={'/'}><li onClick={() => setIsMenuOpen(false)}>Home</li></Link>
                   <Link href={'/about'}><li onClick={() => setIsMenuOpen(false)}>About Us</li></Link>
                    <Link href={'/service'}>  <li onClick={() => setIsMenuOpen(false)}>Services</li></Link>
-                    <li onClick={() => setIsMenuOpen(false)}>Blog</li>
+                    {/* <li onClick={() => setIsMenuOpen(false)}>Blog</li> */}
                   <Link href={'/contact'}> <li onClick={() => setIsMenuOpen(false)}>Contact</li> </Link>
                 </ul>
             </div>

@@ -122,35 +122,7 @@ const items = [
       ))}
     </div>
     </div>
-  <h1 className="text-xl text-center mb-6 text-[rgba(255,255,255,.5)] uppercase">
-            [  Our Services ]
-          </h1>
-            <h1 className="text-2xl text-center md:text-5xl font-medium tracking-tighter 
-            mb-10">What We Do?</h1>
-           <div className="flex justify-center flex-wrap gap-6">
-      {services.map((s) => {
-        return (
-          <div
-            key={s.id}
-            className={`p-10 bg-[rgba(255,255,255,.04)] md:w-[400px] w-[300px] ${s.id === 1 ? 'border-4 border-b-4 border-[rgba(255,255,255,.05)] rounded-tl-2xl': s.id === 3 ? 'rounded-tr-2xl border-4 border-b-4 border-[rgba(255,255,255,.05)]' : s.id === 4 ? 'border-l-4 border-b-4 border-[rgba(255,255,255,.05)] rounded-bl-2xl' : s.id === 5 ? 'rounded-br-2xl border-r-4 border-b-4 border-[rgba(255,255,255,.05)]' : ''}`}
-          >
-            <s.icon size={40} className="mb-4 text-accent" />
-
-            <h3 className="text-2xl font-medium mb-2 text-text">{s.title}</h3>
-
-            <p className="opacity-80 mb-4 text-primary">{s.description}</p>
-
-            {/* <Link
-              href={s.link}
-              className="text-sm underline underline-offset-4 text-accent"
-            >
-              Learn more
-            </Link> */}
-          </div>
-        );
-      })}
-    </div>
-
+  
      
  
         </div>

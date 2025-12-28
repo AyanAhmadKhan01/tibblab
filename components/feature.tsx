@@ -33,7 +33,7 @@ export default function Feature() {
             [  Features We Have  ]
           </h1>
 
-                <h1 className=" text-5xl font-medium text-[hsl(202,100%,55%)]">Why Tibb Lab</h1>
+                <h1 className="text-[clamp(2.5rem,6vw,3rem)] leading-[1.1] font-medium text-[hsl(202,100%,55%)]">Why Tibb Lab</h1>
                  <p className="font-medium text-text  w-fit ml-2"> Experience, precision, and results all under one roof.</p>
                  
            
@@ -89,7 +89,7 @@ export default function Feature() {
   ))}
 
 </div>
- <div className="flex flex-col border-2 border-t-[rgba(255,255,255,.1)] border-r-[rgba(255,255,255,.04)]  border-[rgba(255,255,255,.01)]  rounded-r-2xl mt-auto  h-[390px] w-[900px] m-5  shadow-[19px_7px_22px_#000] backdrop-blur-[200px] saturate-200  ">
+ <div className="flex flex-col border-2 hidden sm:block border-t-[rgba(255,255,255,.1)] border-r-[rgba(255,255,255,.04)]  border-[rgba(255,255,255,.01)]  rounded-r-2xl mt-auto  h-[390px] w-[900px] m-5  shadow-[19px_7px_22px_#000] backdrop-blur-[200px] saturate-200  ">
   <h1 className="text-center mt-9 text-sm ">Growth Rate</h1>
         <h1 className="flex items-center rounded-tr-3xl  mt-9 pl-5 border-b-2 border-[rgba(255,255,255,.02)] ">
          10%

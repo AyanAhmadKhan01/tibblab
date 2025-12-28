@@ -9,13 +9,13 @@ export default function QNA() {
   return (
    <>
    <div className="max-w-[1500px] m-auto">
-    <div className="my-20 mx-40">
+    <div className="my-20 lg:mx-6 mx-10">
     <div className="text-center mb-15 ">
        <h1 className="text-xl mb-10 text-[rgba(255,255,255,.5)] uppercase">
             [ Common Question  ]
           </h1>
 
-    <h1 className="text-5xl font-medium text-[hsl(202,100%,55%)]">Frequently Asked Questions</h1>
+    <h1 className="text-[clamp(2.5rem,6vw,3rem)] leading-[1.1] font-medium text-[hsl(202,100%,55%)]">Frequently Asked Questions</h1>
 <p className="font-medium text-text mt-5">Have questions? We’ve answered the most common ones below.</p>
 
 </div>

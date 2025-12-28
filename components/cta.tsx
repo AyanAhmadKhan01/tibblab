@@ -2,6 +2,7 @@
 
 import {  Instagram, Twitch, Twitter, Youtube, Flag} from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function CTA() {
     const icons = [Youtube, Twitter, Instagram, Twitch, Youtube, Twitter, Instagram, Twitch];
@@ -32,16 +33,16 @@ export default function CTA() {
     Whether you're a brand looking to launch impactful campaigns or an influencer
     wanting to collaborate with top clients, we’ve got you covered.
   </p>
-
+   <Link href={'/contact'}>
                          <motion.button
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.95 }}
-  onHoverStart={() => console.log('hover started!')}
   className="flex justify-center cursor-pointer  md:text-base w-fit m-auto mt-12 md:mt-20 bg-[rgba(255,255,255,.04)] py-4 px-7 rounded-2xl shadow-[0px_10px_0_rgba(0,0,0,.7)]"
   >
      <Flag className="mr-2 text-text " />
     Start our Campaign
     </motion.button>
+    </Link>
   </div> 
           </div>
      

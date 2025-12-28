@@ -57,7 +57,7 @@ export default function Service() {
   return (
    <>
     <div className="mt-20 max-w-[1500px] w-[100%] m-auto">
-   <div className=" mb-12 ">
+   <div className=" mb-12 2xl:mx-0 mx-20">
      <h1 className="text-xl mb-10 text-[rgba(255,255,255,.5)] uppercase">
             [  Services We Offer ]
           </h1>

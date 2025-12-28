@@ -2,6 +2,7 @@
 
 import { Flag, Instagram, MoveDown, Twitch, Twitter, Youtube,} from "lucide-react";
 import { motion } from "motion/react"
+import Link from "next/link";
 
 export default function Hero() {
     const icons = [Youtube, Twitter, Instagram, Twitch];
@@ -9,13 +10,13 @@ export default function Hero() {
         <>
         <div className="flex justify-center text-center
 ">
-            <div className="max-w-[1500px] w-full mt-40 ">
+            <div className="max-w-[1500px] w-full md:mt-40 mt-20 ">
                 <div className="w-12 h-1 mb-10 bg-[hsl(202,100,55)] m-auto"></div> 
-               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[hsl(202,100,55)]">
+               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[hsl(202,100,55)]">
   Health & Fitness Influencer
 </h1>
 
-<h2 className="text-4xl sm:text-5xl lg:text-6xl mt-2 font-bold text-[hsl(202,100%,98%)]">
+<h2 className="text-3xl sm:text-5xl lg:text-6xl mt-2 font-bold text-[hsl(202,100%,98%)]">
   Marketing that Delivers Real Results
 </h2>
 
@@ -24,10 +25,10 @@ export default function Hero() {
 </p>
 
                 <MoveDown className="m-auto mb-10 scale-150 text-[hsl(202,100,20)]"  height={55}/>
+                <Link href={'/contact'}>
                      <motion.button
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.95 }}
-  onHoverStart={() => console.log('hover started!')}
   className="flex w-fit m-auto flex-row cursor-pointer  bg-accent p-4  border-2 border-b-12 border-[hsl(202,100,15)]"
   >
    
@@ -36,6 +37,7 @@ export default function Hero() {
              
                  Start your campaign
                  </motion.button>
+                 </Link>
                 
     <div className="flex justify-center gap-18 mt-10 lg:flex hidden">
  
@@ -49,9 +51,10 @@ export default function Hero() {
         
   ))}
 </div>
-
+<div className="md:block hidden">
                    <div className="w-1 h-20 bg-[hsl(202,100,55)]"></div> 
-                    <div className="w-1 h-50 ml-auto bg-[hsl(202,100,55)]"></div> 
+                    <div className="w-1 h-50 ml-auto bg-[hsl(202,100,55)] "></div> 
+                    </div>
             </div>
         </div>
         

@@ -24,18 +24,26 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2 text-text opacity-60 ">
+              <Link href={'/'}>
               <li className="hover:text-[hsl(202,100%,50%)] cursor-pointer transition-colors">
                 Home
               </li>
+              </Link>
+               <Link href={'/about'}>
               <li className="hover:text-[hsl(202,100%,50%)] cursor-pointer transition-colors">
                 About Us
               </li>
+              </Link>
+              <Link href={'/service'}>
               <li className="hover:text-[hsl(202,100%,50%)] cursor-pointer transition-colors">
                 Services
               </li>
+              </Link>
+              <Link href={'/contact'}>
               <li className="hover:text-[hsl(202,100%,50%)] cursor-pointer transition-colors">
-                Blog
+                Contact
               </li>
+              </Link>
             </ul>
           </div>
 
@@ -58,12 +66,16 @@ export default function Footer() {
           </p>
           <Link href="https://storyset.com/online" className="text-text opacity-30 text-sm">Online illustrations by Storyset</Link>
           <div className="flex gap-6 text-sm text-[hsl(202,40%,30%)]">
+            <Link href={''}>
             <span className="hover:text-[hsl(202,100%,50%)] cursor-pointer transition-colors">
               Privacy Policy
             </span>
+            </Link>
+                  <Link href={''}>
             <span className="hover:text-[hsl(202,100%,50%)] cursor-pointer transition-colors">
               Terms of Service
             </span>
+            </Link>
           </div>
         </div>
       </div>

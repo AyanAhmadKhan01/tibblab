@@ -1,70 +1,88 @@
 import {
   Handshake,
-  Layers,
+  Rocket,
+  PlayCircle,
   Package,
   Users,
-  Video,
 } from "lucide-react";
 
+import Link from "next/link";
 
 export default function Service() {
-    const services = [
+
+  
+
+   const services = [
   {
-    title: "One-Time Collaborations",
-    description:
-      "Perfect for brands testing influencer marketing or launching new products. Simple, fast, and effective.",
+    id: 1,
+    title: "One-Time Collaboration",
+    description: "Partner with top creators for a single, high-impact campaign.",
     icon: Handshake,
+    link: "/services/one-time-collaboration",
   },
   {
-    title: "Full Campaign Management",
-    description:
-      "We plan, execute, manage, and optimize complete influencer marketing campaigns from end to end.",
-    icon: Layers,
-  },
-  {
-    title: "Influencer Seeding",
-    description:
-      "Send products to creators who share genuine reviews and organic content with zero pressure.",
-    icon: Package,
-  },
-  {
+    id: 2,
     title: "Talent Management",
-    description:
-      "We represent select creators and help them scale brand partnerships, content quality, and market reach.",
+    description: "End-to-end creator management to grow and scale influence.",
     icon: Users,
+    link: "/services/talent-management",
   },
   {
-    title: "Influencer Video Production",
-    description:
-      "High-quality, creator-led videos crafted for ads, social media, and brand campaigns.",
-    icon: Video,
+    id: 3,
+    title: "Influencer Seeding",
+    description: "Get your product into the hands of the right creators.",
+    icon: Package,
+    link: "/services/influencer-seeding",
+  },
+  {
+    id: 4,
+    title: "Full Campaign Management",
+    description: "Complete planning, execution, and optimization of campaigns.",
+    icon: Rocket,
+    link: "/services/full-campaign-management",
+  },
+  {
+    id: 5,
+    title: "Influencer Video",
+    description: "High-quality creator-led videos for strong brand impact.",
+    icon: PlayCircle,
+    link: "/services/influencer-video",
   },
 ];
+
     return(
         <>
-        <div className="max-w-[1500px] w-full m-auto mt-20">
-           <h1 className="text-4xl mb-10 text-[rgba(255,255,255,.5)] uppercase">
+        <div className="max-w-[1500px] w-full m-auto mt-20 border-t-2 border-x-2 border-[rgba(255,255,255,.08)] pt-20 rounded-2xl">
+          <h1 className="text-xl  text-center mb-6 text-[rgba(255,255,255,.5)] uppercase">
             [  Our Services ]
           </h1>
-        <div className="flex flex-wrap gap-3 ">
-            {services.map((service, index) => {
-  const Icon = service.icon;
+            <h1 className="text-2xl text-center md:text-5xl font-medium tracking-tighter 
+             border-b-2 pb-10 border-[rgba(255,255,255,.06)]">What We Do?</h1>
+           <div className="flex justify-center flex-wrap gap-6 py-10 bg-[rgba(255,255,255,.02)]">
+      {services.map((s) => {
+        return (
+          <div
+            key={s.id}
+            className={`p-10 text-center bg-[rgba(255,255,255,.04)] md:w-[400px] w-[300px] ${s.id === 1 ? 'border-4 border-b-4 border-[rgba(255,255,255,.05)] rounded-tl-2xl': s.id === 3 ? 'rounded-tr-2xl border-4 border-b-4 border-[rgba(255,255,255,.05)]' : s.id === 4 ? 'border-l-4 border-b-4 border-[rgba(255,255,255,.05)] rounded-bl-2xl' : s.id === 5 ? 'rounded-br-2xl border-r-4 border-b-4 border-[rgba(255,255,255,.05)]' : ''}`}
+          >
+            <s.icon size={100} className="mb-4 m-auto text-accent" />
 
-  return (
-    <div key={index} className={`flex flex-wrap justify-between  border-b-2 border-[rgba(255,255,255,.1)] p-10 w-full ${index === 4 ? 'border-[rgba(255,255,255,0)]' : ''}`}>
-      <div className="text-6xl flex items-center}">
-      <h1>0{index + 1}</h1>
-      </div>
-      <div className="w-[800px]">
-      <Icon height={55} width={55}/>
-      <h3 className="mt-5 text-4xl">{service.title}</h3>
-      <p>{service.description}</p>
-      </div>
+            <h3 className="text-2xl font-medium mb-2 text-text">{s.title}</h3>
+
+            <p className="opacity-50 mb-4">{s.description}</p>
+
+            <Link
+              href={s.link}
+              className="text-sm underline underline-offset-4 text-accent"
+            >
+              Learn more
+            </Link>
+          </div>
+        );
+      })}
     </div>
-  );
-})}
-        </div>
-        </div>
-        </>
+
+          </div>
+  </>
     )
 }
