@@ -120,6 +120,7 @@ export default function Feature() {
       <img
         className="shadow-[0_0_120px_80px_#000] h-full object-cover row-span-2 rounded-tr-3xl opacity-70 "
         src="/13335.jpg"
+        alt="background" 
       />
 
     
@@ -128,13 +129,14 @@ export default function Feature() {
       <div className="flex items-center justify-center gap-6   rounded-4xl  p-8  shadow-[0_0_80px_25px_#000] backdrop-blur-[200px] border-t-[rgba(255,255,255,0.2)] border-r-[rgba(255,255,255,.09)] border-l-[rgba(255,255,255,.07)] border-b-[rgba(255,255,255,.03)] border-2 border-[rgba(255,255,255,.01)] opacity-80" >
         <img
           className="w-[130px] rounded-full"
+          alt="pfp" 
           src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/662c092880a6d18c31995e13_66236537d4f46682e079b6ce_Casual%2520Portrait.webp"
         />
       
 
- <img className=" w-[130px] rounded-full opacity-70" src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/662c092880a6d18c31995e13_66236537d4f46682e079b6ce_Casual%2520Portrait.webp" />
-      <img className=" w-[130px] rounded-full opacity-50" src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/662c092880a6d18c31995e13_66236537d4f46682e079b6ce_Casual%2520Portrait.webp" />
-      <img  className=" w-[130px] rounded-full opacity-30"src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/662c092880a6d18c31995e13_66236537d4f46682e079b6ce_Casual%2520Portrait.webp" />
+ <img className=" w-[130px] rounded-full opacity-70" alt="pfp" src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/662c092880a6d18c31995e13_66236537d4f46682e079b6ce_Casual%2520Portrait.webp" />
+      <img className=" w-[130px] rounded-full opacity-50" alt="pfp"   src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/662c092880a6d18c31995e13_66236537d4f46682e079b6ce_Casual%2520Portrait.webp" />
+      <img  className=" w-[130px] rounded-full opacity-30" alt="pfp"  src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/662c092880a6d18c31995e13_66236537d4f46682e079b6ce_Casual%2520Portrait.webp" />
       
      
 
@@ -143,11 +145,13 @@ export default function Feature() {
       <img
         className="shadow-[0_0_120px_80px_#000] blur-[1px] h-full object-cover row-span-2 rounded-tl-3xl opacity-70 shadow-[30px_30px_2600px_100px_#000] "
         src="/13335.jpg"
+         alt="background" 
       />
 
       <img
         className="shadow-[0_0_120px_80px_#000] blur-[1px] rounded-3xl col-span-4 "
         src="/13335.jpg"
+        alt="background" 
       />
 
     </div>
