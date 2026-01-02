@@ -71,12 +71,12 @@ export default function Service() {
 
             <p className="opacity-50 mb-4">{s.description}</p>
 
-            <Link
+            {/* <Link
               href={s.link}
               className="text-sm underline underline-offset-4 text-accent"
             >
               Learn more
-            </Link>
+            </Link> */}
           </div>
         );
       })}

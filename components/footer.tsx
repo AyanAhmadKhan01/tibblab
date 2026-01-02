@@ -49,12 +49,11 @@ export default function Footer() {
 
     
           <div>
-            <h3 className="text-lg font-bold text-text mb-4">
+            {/* <h3 className="text-lg font-bold text-text mb-4">
               Contact
-            </h3>
+            </h3> */}
             <ul className="space-y-2 text-text opacity-60 cursor-pointer">
-              <li>Email: hello@tibblabs.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
+            {/* <Link className="text-blue-400" href={''}>Linkdin</Link> */}
             </ul>
           </div>
         </div>

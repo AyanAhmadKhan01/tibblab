@@ -19,7 +19,6 @@ export default function Hero() {
 <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-2 font-bold text-[hsl(202,100%,98%)]">
   Marketing that Delivers Real Results
 </h2>
-
              <p className="mt-12 w-[90%] sm:w-[70%] lg:w-[40%] mx-auto text-[hsl(202,80%,25%)]">
   A dedicated influencer marketing partner for fitness and wellness brands seeking real engagement and measurable growth.
 </p>
