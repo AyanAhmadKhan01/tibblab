@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "./theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -56,6 +57,20 @@ export default function RootLayout({
       
         className={`${inter.variable} ${sora.variable} antialiased`}
       >
+         <Script 
+        id="gtag-lib"
+        src="https://www.googletagmanager.com/gtag/js?id=G-G8ZE96F3DT"
+        strategy="afterInteractive"
+     />
+     <Script id="gtag-init" strategy="afterInteractive">
+       {`
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'G-G8ZE96F3DT');
+       `}
+     </Script>
+        
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
