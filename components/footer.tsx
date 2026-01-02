@@ -61,7 +61,7 @@ export default function Footer() {
       
         <div className="border-t-2 border-[hsl(202,100%,55%)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-text opacity-50 text-sm">
-            © 2025 Tibb Labs. All rights reserved.
+            © 2026 Tibb Labs. All rights reserved.
           </p>
           <Link href="https://storyset.com/online" className="text-text opacity-30 text-sm">Online illustrations by Storyset</Link>
           <div className="flex gap-6 text-sm text-[hsl(202,40%,30%)]">
