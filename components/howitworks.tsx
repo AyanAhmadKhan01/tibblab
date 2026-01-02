@@ -10,28 +10,28 @@ export default function HowItWorks() {
       title: "Strategy & Requirements",
       desc: "Understand your goals, audience, budget & KPIs",
       icon: ClipboardList,
-      img: '/Innovation-amico.png'
+      img: 'https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767322958/Innovation-amico_eixi3h.png'
     },
     {
       step: 2,
       title: "Creator Matching",
       desc: "Shortlist & finalize best-fit fitness creators",
       icon: Users,
-      img: '/Social media-bro.png'
+      img: 'https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767322985/Social_media-bro_b0gxzc.png'
     },
     {
       step: 3,
       title: "Campaign Execution",
       desc: "Content creation, publishing & tracking",
       icon: Rocket,
-       img: '/Team work-bro.png'
+       img: 'https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767323007/Team_work-bro_c8hta3.png'
     },
     {
       step: 4,
       title: "Analyze, Optimize & Scale",
       desc: "Improve performance and scale winning campaigns",
       icon: TrendingUp,
-       img: '/Online world-bro.png'
+       img: 'https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767323033/Online_world-bro_h8wfub.png'
     },
    
   ];

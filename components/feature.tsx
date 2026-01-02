@@ -119,7 +119,7 @@ export default function Feature() {
 
       <img
         className="shadow-[0_0_120px_80px_#000] h-full object-cover row-span-2 rounded-tr-3xl opacity-70 "
-        src="/13335.jpg"
+        src="https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767322813/13335_p4c9ps.jpg"
         alt="background" 
       />
 
@@ -144,13 +144,13 @@ export default function Feature() {
 </div>
       <img
         className="shadow-[0_0_120px_80px_#000] blur-[1px] h-full object-cover row-span-2 rounded-tl-3xl opacity-70 shadow-[30px_30px_2600px_100px_#000] "
-        src="/13335.jpg"
+        src="https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767322813/13335_p4c9ps.jpg"
          alt="background" 
       />
 
       <img
         className="shadow-[0_0_120px_80px_#000] blur-[1px] rounded-3xl col-span-4 "
-        src="/13335.jpg"
+        src="https://res.cloudinary.com/dt5qoqw6u/image/upload/v1767322813/13335_p4c9ps.jpg"
         alt="background" 
       />
 
