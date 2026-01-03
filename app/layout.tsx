@@ -40,9 +40,9 @@ export const metadata = {
     canonical: "https://tibblab.vercel.app",
   },
   icons: {
-    icon: "app/favicon.ico",
-    shortcut: "app/favicon.ico",
-    apple: "app/favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 export default function RootLayout({
